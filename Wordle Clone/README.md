@@ -32,3 +32,31 @@ Wordle should have a letter grid and a keyboard to add and remove letters. Each 
 - If we haven’t guessed the word by the sixth try, the game ends there too.
 
 When we’re done, our web application should be like the following:
+
+## Detailed Architecture
+
+<p align="center">
+<b>A detailed architecture of the project, along with each module, is shown in the figure</b>
+</p>
+
+<p align="center">
+  <img src="./architecture.png" alt="prince" />
+</p>
+
+You’ll do most of the development in the following files:
+
+1. `App.js:` This file contains the App component, the main component of this application that calls the grid and keyboard components. This component can be found in the `./wordle-project/src/App.js` file.
+
+2. `acceptableWords.js`: This file contains all the five-letter words that will be used in the game. This component can be found in the `./wordle-project/src/Assets/acceptableWords.js` file.
+
+3. `KeyboardComponent.jsx`: This file will be used to develop the virtual keyboard of Wordle. This component can be found in the `./wordle-project/src/Components/KeyboardComponent.jsx` file.
+
+The following components can be found inside the `./wordle-project/src/Components/Grid` directory.
+
+4. `Tile.jsx`: This file will be used to create a cell of the grid.
+
+5. `GameRow.jsx`: This file will be used to create a row of the grid.
+
+6. `GridComponent.jsx`: This file will be used to develop the complete Wordle grid.
+
+7. `Logic.js`: This file will be used to implement the game logic.
